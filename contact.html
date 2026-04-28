@@ -656,7 +656,7 @@
         </div>
       </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">&#9776;</button>
 
       <nav class="nav-links" id="navLinks">
         <a href="products.html">Products</a>
@@ -970,12 +970,12 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 A & B Success Agro Ltd. All rights reserved.</p>
+        <p>&copy; 2026 A & B Success Agro Ltd. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <a href="https://wa.me/2347032839036?text=Hello%20A%20%26%20B%20Success%20Agro%20Ltd%2C%20I%20want%20to%20make%20an%20agro%20commodity%20inquiry." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+  <a href="https://wa.me/2347032839036?text=Hello%20A%20%26%20B%20Success%20Agro%20Ltd%2C%20I%20want%20to%20make%20an%20agro%20commodity%20inquiry." class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">&#128172;</a>
 
   <div class="mobile-sticky-bar">
     <a href="request-quote.html" class="btn btn-primary">Request Quote</a>
@@ -1000,14 +1000,14 @@
 
     menuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('show');
-      menuToggle.textContent = navLinks.classList.contains('show') ? '✕' : '☰';
+      menuToggle.innerHTML = navLinks.classList.contains('show') ? '&#10005;' : '&#9776;';
     });
 
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         if (window.innerWidth <= 860) {
           navLinks.classList.remove('show');
-          menuToggle.textContent = '☰';
+          menuToggle.innerHTML = '&#9776;';
         }
       });
     });
@@ -1080,3 +1080,4 @@
   </script>
 </body>
 </html>
+
